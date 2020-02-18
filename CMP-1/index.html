@@ -10,20 +10,21 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header class="header">
         <nav class="white-bg nav">
             <button></button>
             <ul class="align-middle space-between">
                 <!-- nav links  -->
-                <li class="align-middle links space-between">
-                    <a href="#" class="logo"><img src="images/logo.png" alt="logo" /><span> One page spotlight</span>
-                    </a>
-                    <a href="#">Home </a>
-                    <a href="#">Explore </a>
-                    <a href="#">Wallet </a>
+                <li class="align-middle links space-between ">
+					<a href="#" class="logo"><img src="images/logo.png" alt="logo" /><span> One page spotlight</span> </a>
+					<span class="align-middle nav-links large">
+						<a href="#">Home </a>
+						<a href="#">Explore </a>
+						<a href="#">Wallet </a>
+					</span>
                 </li>
                 <!-- nav search box -->
-                <li class="search space-between">
+                <li class="search space-between large-device-only">
                     <span class="searchbox round-corner align-middle space-between">
                         <input type="search" name="search" id="search" placeholder="Search">
                         <label class="searchBtn">
@@ -33,11 +34,12 @@
                 </li>
                 <!-- nav user accoutn info  -->
                 <li class="user-info space-between align-middle">
-                    <a href="" class="icons icon-add circle"></a>
-                    <a href="" class="icons icon-mail"></a>
-                    <a href="" class="icons icon-notificatio"></a>
-                    <a href="" class="icons icon-addmore"></a>
-                    <a href="" class="icon-profile">
+                    <a href="#" class="icons icon-add circle large-device-only"></a>
+                    <a href="#" class="icons icon-home small-device-only"></a>
+                    <a href="#" class="icons icon-mail"></a>
+                    <a href="#" class="icons icon-notificatio"></a>
+                    <a href="#" class="icons icon-addmore"></a>
+                    <a href="#" class="icon-profile large-device-only">
                         <span class="user-icon circle">
                             <img src="images/thumnail.png" alt="">
                         </span>
@@ -51,10 +53,10 @@
     <section>
         <article class="container">
             <div class="align-top space-between">
-                <div class="filter large-device-only">
+                <div class="filter large-device-only ">
                     <div class="filterbox white-bg">
                         <ul>
-                            <li class="filter-nav"><span>Filter</span> <a href="#">Clear all</a></li>
+                            <li class="filter-nav"><span class="text-size-large text-medium">Filter</span> <a href="#" class="text-size-small">Clear all</a></li>
                             <li><input type="checkbox" id="all"><label for="all">All</label> </li>
                             <li><input type="checkbox" id="likes"><label for="likes">Likes & Coomments</label> </li>
                             <li><input type="checkbox" id="channel"><label for="channel">Channels</label> </li>
@@ -67,31 +69,31 @@
                 </div>
                 <!--  -->
                 <div class="content channels">
-                    <div class="white-bg body-notifications">
-                        <span></span>
+                    <div class="white-bg align-middle space-between body-notifications">
+                        <span class="text-size-larger text-medium">
+							Notification <span class="badge">1</span>
+						</span>
 
                         <span>
-                            <a href="">Mark all as read</a>
+                            <a href="" class="text-size-small">Mark all as read</a>
                             <a href="" class="icons icon-setting"></a>
                         </span>
                     </div>
 
                     <div class="all-notification-items">
                         <div class="channel-list">
-                            <p>Today</p>
+                            <p class="text-size-large text-medium days">Today</p>
                             <div class="white-bg">
                                 <ul class="items">
                                     <li class="itesList active">
                                         <div class="user-channel align-top space-between">
-                                            <span class="user-icon author circle"><img src="images/thumnail.png" alt="" /></span>
-                                            <span class="author">
+                                            <p><span class="user-icon author circle"><img src="images/thumnail.png" alt="" /></span></p>
+                                            <p class="author">
                                                 <span class="author-name break-line"> Gowtham Kumar</span>
                                                 <span class="author-channel-info">Added 8 medias to Photography
                                                     Channels</span>
-                                            </span>
-                                            <span>
-                                                10 mins
-                                            </span>
+                                            </p>
+                                            <span class="channel-duration"> 10 mins </span>
                                         </div>
                                         <div class="thumbnails">
                                             <a href="#"><img src="images/thumnail.png" class="round-corner" /></a>
@@ -110,15 +112,13 @@
                                                 <span class="author-channel-info">Added 8 medias to Photography
                                                     Channels</span>
                                             </span>
-                                            <span>
-                                                10 mins
-                                            </span>
+                                            <span class="channel-duration"> 10 mins </span>
                                         </div>
                                         <div class="thumbnails align-top ">
                                             <a href="#"><img src="images/thumnail.png" class="round-corner" /></a>
-                                            <p>
-												<span class="break-line">The unrealistic expectation of constant parental involvement</span>
-												<span class="event-date"> 15 Jan</span> <span class="event-place">Bangalore</span>
+                                            <p class="media-descript">
+												<span class="break-line text-medium">The unrealistic expectation of constant parental involvement</span>
+												<span class="event-date badge2"> 15 Jan</span> <span class="event-place">Bangalore</span>
 											</p>
                                             
                                         </div>
@@ -131,9 +131,7 @@
                                                 <span class="author-name break-line"> Gowtham Kumar</span>
                                                 <span class="author-channel-info">Added 8 medias to Photography Channels</span>
                                             </span>
-                                            <span>
-                                                10 mins
-                                            </span>
+                                            <span class="channel-duration"> 10 mins </span>
                                         </div>
                                         <div class="button-group">
                                            <button class="accepetBtn">Accept</button>
@@ -148,10 +146,10 @@
 						<!-- yesterday contesnt -->
 
                         <div class="channel-list">
-                            <p>Yesterday</p>
+                            <p class="text-size-large text-medium days">Yesterday</p>
                             <div class="white-bg">
                                 <ul class="items">
-                                    <li class="itesList active">
+                                    <li class="itesList">
                                         <div class="user-channel align-top space-between">
                                             <span class="user-icon author circle"><img src="images/thumnail.png" alt="" /></span>
                                             <span class="author">
@@ -159,9 +157,7 @@
                                                 <span class="author-channel-info">Added 8 medias to Photography
                                                     Channels</span>
                                             </span>
-                                            <span>
-                                                10 mins
-                                            </span>
+                                           <span class="channel-duration"> 10 mins </span>
                                         </div>
                                         <div class="thumbnails">
                                             <a href="#"><img src="images/thumnail.png" class="round-corner" /></a>
@@ -176,14 +172,12 @@
                                                 <span class="author-channel-info">Added 8 medias to Photography
                                                     Channels</span>
                                             </span>
-                                            <span>
-                                                10 mins
-                                            </span>
+                                            <span class="channel-duration"> 10 mins </span>
                                         </div>
                                         <div class="thumbnails align-top ">
                                             <a href="#"><img src="images/thumnail.png" class="round-corner" /></a>
-                                            <p>
-												<span class="break-line">The unrealistic expectation of constant parental involvement</span>
+                                            <p class="media-descript">
+												<span class="break-line text-medium">The unrealistic expectation of constant parental involvement</span>
 												<span class="discript"> The unrealistic expectation of constant parental involvement The unrealistic expectation of constant parental involvementThe </span>
 											</p>
                                         </div>
@@ -196,9 +190,7 @@
                                                 <span class="author-name break-line"> Gowtham Kumar</span>
                                                 <span class="author-channel-info">Added 8 medias to Photography Channels</span>
                                             </span>
-                                            <span>
-                                                10 mins
-                                            </span>
+                                            <span class="channel-duration"> 10 mins </span>
                                         </div>
                                         <div class="media-group align-top">
                                            <a href="#" class="media round-corner"><span class="icons icon-audio"></span></a>
@@ -216,9 +208,7 @@
                                                 <span class="author-name break-line"> Gowtham Kumar</span>
                                                 <span class="author-channel-info">Added 8 medias to Photography Channels</span>
                                             </span>
-                                            <span>
-                                                10 mins
-                                            </span>
+                                            <span class="channel-duration"> 10 mins </span>
                                         </div>
                                         <div class="media-group align-top">
                                            <a href="#" class="media round-corner"><span class="icons icon-video"></span></a>
@@ -239,15 +229,15 @@
 					<div class="activitesbox white-bg">
                         <ul class="items">
 							<li class="align-top space-between">
-								<span class="">Activities</span>
-								<a href="#">Filter</a>
+								<span class="text-size-large text-medium">Activities</span>
+								<a href="#" class="text-size-small">Filter</a>
 							</li>
                             <li class="itesList">
 								<div class="user-channel align-top space-between">
 									<p><span class="user-icon author circle"><img src="images/thumnail.png" alt="" /></span></p>
-									<p>
-										<span class="break-line">The unrealistic expectation of constant parental involvement</span>
-										<span>4 mins</span>
+									<p class="channel media-descript">
+										<span class="break-line"><strong>Rajesh Singh</strong> added <strong>4 medias</strong> to <strong>photography</strong> channel</span>
+										<span class="author-channel-info">4 mins</span>
 									</p>
 								</div>
 							</li>
