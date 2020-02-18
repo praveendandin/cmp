@@ -39,7 +39,7 @@ a {
 }
 
 .container {
-    max-width: 1090px;
+    max-width: 1180px;
     width:100%;
     margin: 0 auto;
 }
@@ -61,8 +61,8 @@ button {
     .align-top, .align-middle, .align-bottom {
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
     .align-top {
         -ms-flex-pack:start;
@@ -99,36 +99,43 @@ button {
     }
 
 
-/* navigation menu  */
-    .text-size-26 {
-        font-size: 1.625rem;
+/* navigation menu  */    
+    .text-x-small {
+        font-size: var(--font-size-x-small);
     }
-    .text-size-24 {
-        font-size: 1.5rem;
+    .text-size-small {
+        font-size: var(--font-size-small);
     }
-    .text-size-22 {
-        font-size: 1.375rem;
+	.text-size-medium {
+        font-size: var(--font-size-medium);
     }
-    .text-size-20 {
-        font-size: 1.25rem;
+    .text-size-large {
+        font-size: var(--font-size-large);
     }
-    .text-size-18 {
-        font-size: 1.125rem;
+    .text-size-larger {
+        font-size: var(--font-size-x-larger);
     }
-    .text-size-16 {
-        font-size: 1rem;
-    }
-    .text-size-12 {
-        font-size: 0.75rem;
-    }
+/* font weight styles */
+	.text-bold {
+		font-weight: 800;
+	}
+	.text-medium {
+		font-weight:600;
+	}
+	.text-light {
+		font-weight:300;
+	}
 header {
     display: block;
     margin-bottom: 20px;
 }
 
 .nav {
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav .align-middle {
+    flex-direction: column;
 }
 .searchbox {
     background:var(--icon-bg);
@@ -172,18 +179,23 @@ header {
     transform: translate(18px, -55%);
 }
 .icon-mail {
-    background-position: -2px -55px;
-    width: 46px;
-    height: 36px;
+    background-position: -1px -55px;
+    width: 39px;
+    height: 32px;
 }
 .icon-notificatio {
-    background-position: -57px -56px;
-    width: 40px;
-    height: 42px;
+    background-position: -47px -53px;
+    width: 36px;
+    height: 38px;
 }
 .icon-addmore {
-    background-position: -105px -55px;
-    width: 50px;
+    background-position: -87px -52px;
+    width: 43px;
+    height: 35px;
+}
+.icon-home {
+    background-position: -1px -99px;
+    width: 36px;
     height: 38px;
 }
 .user-icon {
@@ -194,9 +206,9 @@ header {
     background: var(--text-lightblue);
 }
 .icon-setting {
-    background-position: -166px -55px;
-    width: 50px;
-    height: 38px;
+    background-position: -351px -51px;
+    width: 35px;
+    height: 35px;
 }
 .icon-audio {
     background-position: -83px -5px;
@@ -219,11 +231,47 @@ header {
     display: inline-block;
     transform: translate(-5px, 10px);
 }
+.body-notifications {
+    padding:10px 25px 10px 20px;
+}
+.badge, .badge2 {
+    background: var(--button-bg);
+    color: var(--lite-bg);
+    line-height: var(--font-size-x-small);
+    padding:0 1rem;
+    border-radius: 5px;
+    font-weight: 400;
+}
 .searchBtn input {
     text-indent: -9999px;
 }
-.nav .align-middle {
+.nav .align-middle.user-info {
     flex-direction: row;
+}
+.nav-links {
+    justify-content: space-between;
+    width: 70%;
+}
+.links, .user-info {
+    width: 100%;
+}
+.links {
+    justify-content: flex-start;
+}
+.logo img + span {
+    transform: translate(10px, -40px);
+    display: inline-block;
+}
+.logo img {
+    max-width:70%;
+}
+.content {
+    width: 100%;
+}
+.header .nav  {
+    padding-top:10px;
+    padding-bottom: 10px;
+    box-shadow: #D5DBDD 0 2px 5px;
 }
 /* user channels styles */
     .itesList {
@@ -247,7 +295,7 @@ header {
 	}
 	.itesList {
 		border-bottom:var(--border-clr2) solid 1px;
-		padding: 30px 40px 25px 35px;
+		padding: 30px 25px 25px 20px;
 	}
 	.itesList .thumbnails  a {
 		display:inline-block;
@@ -263,35 +311,91 @@ header {
 		border:var(--button-bg) solid 2px;
 	}
 	span.discript {
-		max-width: 410px;
+        max-width: 370px;
 		text-overflow: ellipsis;
 		display: block;
 		overflow: hidden;
 		white-space: nowrap;
-	}
+    }
+    .nav-links  {
+        font-size: 0;
+    }
 	
 	.media {
-		width: 104px;
-		height: 67px;
+		width: 90px;
+		height: 55px;
 		background: var(--icon-bg);
 		text-align: center;
-		padding-top: 13px;
+		padding-top: 6px;
 		box-sizing: border-box;
-		line-height: 37px;
+        line-height: 37px;
+        margin-right:10px;
 	}
-	
+	.media-group .moreiChannel {
+        line-height: 3.4rem;
+        margin-left:10px;
+    }
 	.activitesbox li.itesList{
 		padding:0;
-	}
+    }
+    .author-channel-info {
+        color: var(--lite-gry);
+    }
+    
+
+/* notification styles start */
+    .author  {
+        max-width: 450px;
+        width: 72%;
+        margin: 0 10px;
+    }
+    .user-channel {
+        margin-bottom: 15px;
+    }
+    .author .author-name {
+        font-size: var(--font-size-medium);
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .channel-duration {
+        color: #91A5AF;
+    }
+	
+
+/* activies block section styles start */
+	.user-channel .user-icon {
+		width:42px;
+		height:42px;
+    }
+    .media-descript {
+        padding-left: 15px;
+    }
 	
 
 .large-device-only  {
 	display:none;
 }
+.small-device-only {
+    display: block;
+}
+.badge2 {
+    background: #ECEFF1;
+    color: #263238;
+    display: inline-block;
+    line-height: 30px;
+}
+.event-place {
+    margin-left: 10px;
+}
 /* large device styles */
 @media (min-width:992px) {
-    .container .align-top {
+    .container .align-top,
+    .container .align-middle,
+    .container .align-bottom {
         flex-direction: row;
+    }
+    .small-device-only {
+        display: none;
     }
 	.large-device-only {
 		display:block;
@@ -301,11 +405,15 @@ header {
             padding-left: 4.6875rem;
             padding-right: 4.6875rem;
         }
+        .nav .align-middle {
+            flex-direction: row;
+        }
+      
         .logo span{
             text-indent: -9999px;
             display: inline-block;
         }
-        .nav li a {
+        .nav-links  {
             font-size: var(--font-size-x-larger);
             font-weight: 600;
         }
@@ -347,7 +455,7 @@ header {
         }
         .filter,
         .activites {
-            max-width: 230px;
+            max-width: 280px;
             width: 80%;
         }
     
@@ -357,7 +465,11 @@ header {
         .activites {
             margin-left: 30px;
         }
-		
+        
+        span.discript {
+            max-width: 410px; 
+        }
+
 	/*  filter column section styles */
 		.filterbox,
 		.activitesbox {
@@ -397,7 +509,14 @@ header {
 		}
 		li.filter-nav {
 			margin-top:0;
-		}
+        }
+        
+        .activitesbox .user-channel {
+            padding-top: 20px;
+        }
+        .days {
+            padding: 10px 25px 10px 20px;
+        }
 }
 
 @media (min-width:1980px) {
