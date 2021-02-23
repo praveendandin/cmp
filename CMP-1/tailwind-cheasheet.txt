@@ -1,0 +1,611 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happi</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        @media (min-width:768px) and (max-width:1024px) and (orientation: landscape) {		
+			.why-happi > div {			
+				width: 33.33%;		
+			}		
+			.fliter-img {			
+				height: 75%;			
+				width: 100%;					
+			}
+			.fliter-img1 {
+				margin-top:10rem;
+			}
+			.big-circle::after {			
+				width: 45.75rem;			
+				height: 45.75rem;			
+				top:45%;		
+			} 	
+			.hdhw-sub-title {
+				width:70%;
+			}
+			.container h1.Steradian-bold > span {
+				font-size:3rem;
+			}
+			.filter-sub-content {
+				width:90%;
+			}
+			.filter-sub-content:nth-child(2) {
+				margin-top:75px;
+			}
+			
+			.filter-content {
+				padding:0 50px
+			}
+			.photocatalyst-filter {
+				margin-top: 133px;
+				width: 15rem;
+			}
+		}		
+		@media (min-width:768px) and (max-width:1024px) and (orientation: portrait) {		
+			.fliter-img {			
+				height: 70%;			
+				width: 93%;
+			}	
+			.big-circle::after {			
+				width: 30.75rem;			
+				height: 30.75rem;			
+				top:51%;		
+			} 
+		}   
+		@media (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {		
+			.why-happi > div {			
+				width: 33.33%;		
+			}	
+			.big-circle::after {
+				width: 45.75rem;
+				height: 45.75rem;
+				top: 46%;
+			}
+			.fliter-img {
+				width:100%;
+				height:80%;
+			}
+			.fliter-img1 {
+				margin-top:10rem;
+			}
+			.filter-sub-content {
+				width:90%;
+			}
+			.filter-sub-content:nth-child(2) {
+				margin-top:94px;
+				margin-bottom:1rem;
+			}
+			.filter-content  {
+				padding:0 40px
+			}
+			.hdhw-sub-title {
+				width:70%;
+			}
+			.container h1.Steradian-bold > span {
+				font-size:3rem;
+			}
+			.off-today {
+				margin-left: 1.5rem;
+				margin-top: 0rem;
+			}
+			.free-ship {
+				margin-top: 1rem;
+			}
+			.photocatalyst-filter {
+				margin-top: 8rem;
+			}
+		  }
+    </style>
+  </head>
+  <body  style="font-family: 'Steradian', arial";>    <!--banner-->
+   <section class="bg-gray-100">
+      <p class="p-4 text-center text-2xl font-semibold" style="background:#D7F9EC">Get $50 Off Now</p>         
+      <div class="md:flex bg-gray-100 pb-10 md:pr-8 md:pt-10 lg:pr-0 container lg:mx-auto">                
+         <div class="w-full md:w-1/2 lg:p-8 px-5" >                        
+            <h1 class="font-semibold Steradian-bold text-center md:text-left">                
+				<span class="text-2xl md:text-xl lg:text-4xl lg:pl-8 pt-7 pb-11 lg:pb-8 block text-center md:text-left">
+					<img src="images/happylogo.png" alt="hppi" class="inline-block">
+				</span>
+				<span class="text-4xl md:text-3xl lg:text-6xl  block align-left  lg:pl-8">Live Healthy,</span> 
+				<span class="text-4xl md:text-3xl lg:text-6xl  block align-left  lg:pl-8">breathe Happi.</span>            
+			</h1>                       
+            <p class="font-500 text-sm Steradian-medium lg:text-2xl md:text-sm p-2 md:pl-0 lg:pl-8 lg:pb-10 lg:mt-4 text-center md:text-left ">Plug in and breathe easy.</p>
+            <!-- mobile device happi product image with 50% badge -->            
+            <div class="flex flex-wrap md:hidden">                               
+               <div class="block h-full w-full text-black pl-10 align-middle">
+                  <img src="images/banner1.png">				
+                  <p class="font-400 text-xs text-center -ml-6 mb-10 justify-center mt-3">100s of ★★★★★ Happi Customers</p>
+               </div>                           
+            </div>
+            <!-- desktop changes-->            
+            <div class="flex md:flex-wrap p-2 pl-2 md:pl-0 lg:pl-8 lg:pb-12 items-center justify-center md:justify-start">                               
+               <p class="font-500 mr-5 Steradian-regular text-sm md:text-base lg:text-2xl text-gray-400 line-through ">$449.00</p>
+			   <button class="bg-white text-sm Steradian-regular font-500 rounded-full shadow-lg tracking-wider free-ship md:text-sm lg:text-2xl py-2 px-6">$399.00 + Free Shipping </button>            
+            </div>
+			<button class="mt-7 text-base font-500 py-3 off-today Steradian-regular rounded-full lg:p-4 lg:mx-10 shadow-lg tracking-wider md:my-6 lg:text-2xl text-xl w-full lg:w-96" style="background:#ABEBC6;">Get $50 off today</button>        
+         </div>
+         <div class="w-full md:w-1/2 md:p-8 hidden md:block" >
+                        <!-- desktop  happi product image with 50% badge -->            
+            <div class="lg:flex lg:flex-wrap">
+               <div class="lg:w-4/5">             
+                  <div class="block h-full w-full text-black pl-10 align-middle">
+                     <img src="images/banner1.png">				
+                     <p class="font-400 text-xs Steradian-regular lg:text-base justify-center lg:ml-10">100s of ★★★★★ Happi Customers</p>
+                  </div>
+               </div>          
+            </div>
+         </div>
+      </div>
+   </section>
+    
+   <!-- ***************** Try Happi for 45 days ******************************* --><!--2nd section-->
+   <section class="text-center">        
+      <div class="xs:text-center align-middle md:flex">
+         <div class="px-6 my-6 md:px-0 sm:w-full md:w-1/2 lg:w-1/2 mx-auto md:my-20 lg:my-28">          
+			<img src="images/tryhappi.png">      
+		</div>               
+         <div class="sm:w-full md:w-1/2 mx-auto lg:w-1/2  py-5 md:py-20 lg:py-16 mt-0 lg:mt-32 px:5 lg:px-0 ">
+            <h2 class="text-3xl md:text-2xl lg:text-4xl font-semibold py-6 px-6 border-b-2 border-black inline-block align-middle ">Try Happi for 45 days</h2>
+            <p class="lg:text-xl md:text-sm p-6">Plug in Happi and let your lungs breathe a sigh of relief. If, for some strange reason, they are not sold, we will happily return your money within 45 days of purchase.</p>
+         </div>
+      </div>
+   </section>
+   <!-- ***************** Why Happi ******************************* -->
+   <section class="bg-gray-100 p-6 text-center">          
+      <h2 class="text-3xl md:mt-10 pb-5 px-6 font-semibold inline-block text-center align-middle border-b-2 border-black md:p-6">Why Happi</h2>          
+      <p class="text-sm font-medium p-4 text-center"> Air purification you can see </p>          
+      <div class="flex flex-wrap justify-center lg:p-8 container mx-auto why-happi">                 
+         <div class="w-1/2 md:w-1/5 lg:w-1/5">
+                        <img class="bg-white inline-block rounded-full p-4 w-3/6 md:w-auto"src="images/happi1.png">            
+            <p class="text-sm text-center font-semibold md:text-base lg:text-xl mt-4 mb-10">Screens so smart <br> they can taste the air.</p>
+         </div>
+                 
+         <div class="w-1/2 md:w-1/5 lg:w-1/5">
+                        <img class="bg-white inline-block rounded-full p-4 w-3/6 md:w-auto"src="images/happi2.png">            
+            <p class="text-sm text-center font-semibold md:text-base lg:text-xl mt-4 mb-10">Keeping the <br>planet planted</p>  
+         </div>
+         <div class="w-1/2 md:w-1/5 lg:w-1/5">
+                        <img class="bg-white inline-block rounded-full p-4 w-3/6 md:w-auto"src="images/happi3nn.png">            
+            <p class="text-sm text-center font-semibold md:text-base lg:text-xl mt-4 mb-10">Quality, from factory <br>floor to your front door.</p>   
+         </div>
+         <div class="w-1/2 md:w-1/5 lg:w-1/5">
+                        <img class="bg-white inline-block rounded-full p-4 w-3/6 md:w-auto"src="images/happi4.png">            
+            <p class="text-sm text-center font-semibold md:text-base lg:text-xl mt-4 mb-10">Filters that anticipate <br> when they're needed.</p> 
+         </div>
+         <div class="w-1/2 md:w-1/5 lg:w-1/5 pb-10">
+                        <img class="bg-white inline-block rounded-full p-4 w-3/6 md:w-auto"src="images/happi5nn.png">            
+            <p class="text-sm text-center font-semibold md:text-base lg:text-xl mt-4 mb-10">Happi has 45 days to <br>prove its worth.</p> 
+         </div>
+      </div>
+   </section>
+
+   <section class="bg-white text-center md:mb-20">
+      <div class="flex">
+         <div class="w-full">
+            <h2 class="text-3xl md:text-4xl font-semibold border-b-2 border-black inline-block align-middle pb-5 px-4 md:pb-5 md:px-5 mt-10 lg:mt-16 lg:p-8">Reviews</h2>
+            <p class="mt-2.5 md:px-6 text-l font-medium mb-7 hidden md:block">What Happi customers have to say.</p>
+                        
+            <p class="mt-2.5 md:px-6 text-l font-medium mb-7 md:hidden block">Best Seller</p>
+         </div>
+      </div>
+      <div class="md:flex md:px-8 lg:my-24 hidden lg:mt-7 md:block container md:mx-auto">
+         <div class="w-full md:w-1/3 md:mr-6 lg:mr-12  " >
+            <div class="rounded-b-2xl shadow " style="background: #CED4F7;">
+                                   <img class="inline-block align-middle  md:p-4 lg:p-8 lg:w-full" src="images/review1.png">                
+               <p class="text-gray-800 md:text-sm md:leading-4 lg:text-lg font-medium text-left md:py-4 md:px-4 lg:py-6 lg:px-6  pb-4 tracking-wider md:pt-0 md:mb-0 ">                It's much quieter than I thought it would be. The white also looks great in my living room. It's great!                </p>
+               <div class="flex justify-between items-center py-4 px-4 lg:px-6 lg:py-6 border-t-2 border-gray-500">
+                  <p class="text-black-500 font-semibold text-sm lg:text-base uppercase text-left ">ARIANNA M.</p>
+                                      <span class="text-base">★★★★★</span>                
+               </div>
+            </div>
+         </div>
+         <div class="w-full md:w-1/3  " >
+            <div class=" rounded-b-2xl shadow" style="background: #C6F6F7;">
+                                       <img class="inline-block align-middle  md:p-4 lg:p-8 lg:w-full" src="images/review3.png">                    
+               <p class="text-gray-800 md:text-sm md:leading-4 lg:text-lg font-medium text-left md:py-6 md:px-4 lg:py-8 lg:px-6 lg:mb-5 lg:mt-5 pb-4 tracking-wider xl:mb-1 xl:mt-2  md:pt-6 md:mb-0 lg:mb-1">  Love it !! Its's peaceful and cute in my room!!  </p>
+               <div class="flex justify-between items-center md:py-4 md:px-4 lg:py-6 lg:px-6 pt-0 border-t-2 border-gray-500">
+                                          
+                  <p class="text-black-500 font-semibold text-sm lg:text-base uppercase text-left ">Brookyln V.</p>
+                                          <span class="text-base">★★★★★</span>                    
+               </div>
+            </div>
+         </div>
+         <div class="w-full md:w-1/3 md:ml-6 lg:ml-12 " >
+            <div class=" rounded-b-2xl shadow" style="background: #F4F590;">
+                                   <img class="inline-block align-middle  md:p-4 lg:p-8 lg:w-full" src="images/review2.png">                
+		   <p class="text-gray-800 md:text-sm md:leading-4 lg:text-lg font-medium text-left md:pl-4 lg:px-4 lg:py-4 md:pr-2 lg:px-4 lg:mb-4 pb-4 tracking-wider">                Feels very durable and well built. Love the screen so I can see the air quality levels whenever I want.                </p>
+               <div class="flex justify-between items-center md:px-4 md:pt-4 md:py-4 lg:py-6 lg:px-6  border-t-2 border-gray-500">
+                                      
+                  <p class="text-black-500 font-semibold text-sm lg:text-base uppercase text-left ">Davi M.</p>
+                                      <span class="text-base">★★★★★</span>                    
+								  <!-- ***************** rating stars *********  -->                
+               </div>
+                               
+            </div>
+                        
+         </div>
+                 
+      </div>
+          <!-- ***************** review carousel ************ -->    
+      <div class="carousel relative md:hidden ">
+                 
+         <div class="carousel-inner relative overflow-hidden w-full pb-20">
+                      <!--Slide 1-->            <input class="carousel-open" type="radio" id="carousel-6" name="carousel" aria-hidden="true" hidden="" checked="checked">            
+            <div class="carousel-item absolute opacity-0" >
+                               
+               <div class="block  w-full  text-5xl text-center">
+                                      
+                  <div class="w-9/12 md:w-1/3 px-2 mb-4  mx-auto ">
+                                             
+                     <div class="inline-block rounded-b-2xl shadow " style="background:#b0e0e6;">
+                                                    <img class="inline-block align-middle  p-8" src="images/review1.png">                        
+                        <p class="text-gray-800 text-lg font-medium text-left px-6 mb-5 pb-4 tracking-wider border-b-2 border-gray-500">                        It's much quieter than I thought<br> it would be. The white also looks<br> great in my living room. <br>It's great!                        </p>
+                                                                        
+                        <div class="flex justify-between items-center py-6 px-6 pt-0">
+                                                       
+                           <p class="text-black-500 font-semibold text-lg uppercase text-left ">ARIANNA M.</p>
+                                                       <span class="text-base">★★★★★</span>                        
+                        </div>
+                                                
+                     </div>
+                                         
+                  </div>
+                                  
+               </div>
+                           
+            </div>
+                        <label for="carousel-8" class="prev md:hidden control-6 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full  hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><img src="images/arrow1.png"></label>            <label for="carousel-7" class="next md:hidden control-6 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full  hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><img src="images/arrow2.png"></label>                        <!--Slide 2-->            <input class="carousel-open" type="radio" id="carousel-7" name="carousel" aria-hidden="true" hidden="">            
+            <div class="carousel-item absolute opacity-0" >
+                               
+               <div class="block  w-full text-5xl text-center">
+                                      
+                  <div class="w-9/12 md:w-1/3 px-2 mb-4  mx-auto ">
+                                             
+                     <div class="inline-block rounded-b-2xl shadow" style="background:#c7fcfe;">
+                                                    <img class="inline-block align-middle  p-8" src="images/review3.png">                        
+                        <p class="text-gray-800 text-lg font-medium text-left px-6 mb-5 py-8 mt-2 tracking-wider border-b-2 border-gray-500">                        Love it !! Its's peaceful and quite in my room!!                        </p>
+                                                                       
+                        <div class="flex justify-between items-center py-6 px-6 pt-0">
+                                                       
+                           <p class="text-black-500 font-semibold text-lg uppercase text-left ">Brookyln V.</p>
+                                                       <span class="text-base">★★★★★</span>                        
+                        </div>
+                                                
+                     </div>
+                                         
+                  </div>
+                                  
+               </div>
+                           
+            </div>
+                        <label for="carousel-6" class="prev md:hidden control-7 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full  hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><img src="images/arrow1.png"></label>            <label for="carousel-8" class="next md:hidden control-7 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full  hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><img src="images/arrow2.png"></label>                         <!--Slide 3-->            <input class="carousel-open" type="radio" id="carousel-8" name="carousel" aria-hidden="true" hidden="">            
+            <div class="carousel-item absolute opacity-0" >
+                               
+               <div class="block  w-full text-5xl text-center">
+                                                          
+                  <div class="w-9/12 md:w-1/3 px-2 mb-4  mx-auto  ">
+                                             
+                     <div class="inline-block rounded-b-2xl shadow " style="background:#e7d24a;">
+                                                    <img class="inline-block align-middle  p-8" src="images/review2.png">                        
+                        <p class="text-gray-800 text-lg font-medium text-left px-6 mb-5 pb-4 tracking-wider border-b-2 border-gray-500">                        Feels very durable and well<br> built. Love the screen so I can <br>see the air quality levels whenever I want.                        </p>
+                                                
+                        <div class="flex justify-between items-center py-6 px-6 pt-0">
+                                                       
+                           <p class="text-black-500 font-semibold text-lg uppercase text-left ">Davi M.</p>
+                                                       <span class="text-base">★★★★★</span>                        
+                        </div>
+                                                                        
+                     </div>
+                                         
+                  </div>
+                                  
+               </div>
+                           
+            </div>
+                        <label for="carousel-7" class="prev md:hidden control-8 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full  hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><img src="images/arrow1.png"></label>            <label for="carousel-6" class="next md:hidden control-8 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full  hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><img src="images/arrow2.png"></label>                <!-- Add additional indicators for each slide-->            
+            <ol class="carousel-indicators md:hidden review-carousel-indicators">
+                               
+               <li class="inline-block mr-3">                    <label for="carousel-6" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-blue-700">•</label>                </li>
+                               
+               <li class="inline-block mr-3">                    <label for="carousel-7" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-blue-700">•</label>                </li>
+                               
+               <li class="inline-block mr-3">                    <label for="carousel-8" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-blue-700">•</label>                </li>
+                           
+            </ol>
+                                
+         </div>
+             
+      </div>
+   </section>
+   <!-- ********************** review *************************** -->
+   
+   
+   <!-- ***************** desktop section how does it Happi work ********************-->  
+   <section class="bg-gray-100 text-justigy hidden md:block relative big-circle lg:pb-20">
+              
+      <div class=" p-8 text-center container mx-auto relative z-10">
+		<div class="container">
+			<h1 class="text-3xl mt-10 font-semibold inline-block text-center align-middle p-6">How does Happi work?</h1>                 
+			 <div class="border-b-2 border-black md:w-2/5 lg:w-1/5 mx-auto"></div>          		        
+			 <p class="md:text-lg text-md font-base p-4 lg:w-1/2 mx-auto text-center hdhw-sub-title"> Pure air take precise work.Happi  Technology uses five filters that work in harmony to ensure unwanted particles stay out of your space.</p>
+		</div>
+         
+                 
+         <div class="hidden md:flex py-10 ">                        
+            <div class="w-1/2 lg:pl-12">                <img class="inline-block align-right mt-6 fliter-img1" src="images/filter1.png ">                </div>
+                        
+            <div class="w-1/2 p-2">                               
+               <div class="py-2 lg:px-4 lg:mt-20 lg:pt-3">                                  
+                  <h3 class="lg:text-xl md:text-md font-semibold text-left md:mt-20 lg:mt-36 pt-6 Steradian-bold">HPEA Filter</h3>                                  
+                  <p class="lg:text-lg md:text-sm font-base text-left ">The high-density antibacterial filter forces air through a fine mesh that removes spollen, dust mites and fibres.</p>
+                    
+               </div>                               
+               <div class=" lg:px-4 lg:mt-3">                                      
+                  <h3 class="lg:text-xl  md:text-md font-semibold text-left mt-38 Steradian-bold">Initial Effect Filter</h3>                                      
+                  <p class="lg:text-lg md-text-sm font-base text-left">This frontline filter has a bucket-shaped structure scroops out dust,hair,dander,and other large particles.</p>                                  
+               </div>                           
+            </div>                        
+            <div class="bg-white inline-block rounded-full"></div>
+         </div>             
+      </div>
+          
+      <div class="flex lg:pl-24 lg:pr-2 container mx-auto relative z-10 -mt-20 lg:-mt-10 filter-content">                 
+         <div class="w-full">                        
+            <div class="flex px-8">  
+				<div class="md:w-56 lg:w-96 -mt-2">
+					<div class="filter-sub-content">
+						<h3 class="lg:text-xl md:text-md font-semibold text-left lg:ml-0 Steradian-bold">UV-C sterilizing layer </h3>
+						<p class="lg:text-lg md:text-sm font-base text-left  lg:pl-0">An ultraviolet ray targets super-bags like MRSA and provides  deep, wide-reaching sterilization.  </p>
+					</div>                  
+					<div class="lg:mt-36 lg:pl-0 md:mt-20 md:mb-5 lg:mb-7 filter-sub-content">
+						 <h3 class="lg:text-xl md:text-md md:-mt-4 font-semibold text-left Steradian-bold">HPEA Filter</h3>
+						 <p class="lg:text-lg md:text-sm font-base text-left">The high-density antibacterial filter  forces air through a fine mesh  that removes spollen, dust mites and  fibres.</p>
+					</div>
+					<div class="mb-10 lg:pl-0 filter-sub-content">
+                     <h3 class="lg:text-xl md:text-md font-semibold text-left Steradian-bold filter-sub-content">Active Carbon Filter</h3>
+                     <p class="lg:text-lg md:text-sm font-base text-left">This honeycomb-shaped filter absorbs formaldehyde, TVOC and  other harmful substances. </p>
+					</div>
+				</div>
+				
+               <div class="w-1/2 lg:w-1/2 md:-ml-12">
+					<img class=" lg:mt-0 lg:h-auto fliter-img lg:-ml-14"src="images/filter2.png" >
+			   </div>
+			   
+               <div class="w-3/12 lg:w-1/5">                   
+                  <div class="md:mt-16 md:mt-32 lg:mt-48 lg:-ml-8 photocatalyst-filter">
+					   <h3 class="lg:text-xl md:text-md font-semibold text-left Steradian-bold">Photocatalyst Filter</h3>
+					   <p class="lg:text-lg md:text-sm font-base text-left">A second, super-fine mesh layer to degrade noxious gases, kill bacteria and remove  bad odors</p>
+					</div>
+               </div>
+				 
+            </div>
+         </div>             
+      </div>
+   </section>
+   
+   
+   <!-- **************** mobile section how does happi work ***************** -->
+   <section class="text-center bg-gray-100 p-7 block md:hidden">
+          
+      <h2 class="lg:text-5xl text-2xl font-semibold pb-4  inline-block ">How does Happi work?</h2>
+          
+      <div class="border-b-2 border-black md:w-2/5 lg:w-1/5 mx-auto"></div>
+          
+      <p class="md:text-xl text-md text-base py-4 mx-auto">Pure air takes precise work. Happi technology uses five filters that work in harmony to ensure unwanted particles stay out of your space.</p>
+          
+      <div class="flex  mx-auto ml-0">
+                 
+         <div class="pl-2">
+            <p class="text-center px-4 py-2 font-bold rounded-full mt-8" style="background: #FEC0B7">1</p>
+         </div>
+                 
+         <div class="text-center ">
+                        
+            <h6 class="text-left font-bold text-lg pl-6 pb-2 mt-8">UV-C Sterilizing layer</h6>
+                        
+            <p class="text-base text-left pl-6">An Ultra Violet ray targets super-bugs like MRSA and provides deep, wide reaching sterilization.</p>
+                    
+         </div>
+             
+      </div>
+          
+      <div class="text-center mx-auto">        <img class="w-10/12 mx-auto" src="images/mobileimage.png">    </div>
+          
+      <div class="flex  mx-auto ml-0">                 
+         <div class="pl-2">
+            <p class="text-center px-4 py-2 font-bold rounded-full" style="background: #FEC0B7">2</p>
+         </div>
+                 
+         <div class="text-center ">                        
+            <h6 class="text-left font-bold text-xl pl-6">Our Filter technology</h6>
+            <h5 class="text-left font-bold text-lg px-6 pt-4 pb-2">Initial Effect Filter</h5>                        
+            <p class="text-base text-left pl-6">This frontline filter has a bucket-shaped structure scroops out dust,hair,dander, and the other large particles. </p>
+            <h5 class="text-left font-bold text-lg px-6 pt-4 pb-2">HEPA Filter</h5>                        
+            <p class="text-base text-left  pl-6">The high-density antibacterial filter forces air  through a fine mesh that removes pollen, dust mites, and fibres.</p>                        
+            <h5 class="text-left font-bold text-lg px-6 pt-4 pb-2">Active carbon filter </h5>
+                        
+            <p class="text-base text-left  pl-6">This honeycomb-shaped filter absorbes formaldehyde, TVOC, and other harmful substances.</p>
+                                    
+            <h5 class="text-left font-bold text-lg px-6 pt-4 pb-2">Photocatalyst</h5>
+                        
+            <p class="text-base text-left  pl-6">A second, super-fine mesh layer to degrade noxious gases, kill bacteria, and remove bad odors.</p>
+                    
+         </div>
+             
+      </div>
+   </section>
+   </body>
+
+  
+
+@font-face {
+    font-family: "Steradian";
+    font-weight: 300;
+    src: url("../fonts/Steradian/Steradian-Light.woff2") format("woff2"),
+    url("../fonts/Steradian/Steradian-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Steradian";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Steradian/Steradian-Regular.woff2") format("woff2"),
+    url("/fonts/Steradian/Steradian-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Steradian";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/Steradian/Steradian-Medium.woff2") format("woff2"),
+    url("/fonts/Steradian/Steradian-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Steradian";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/Steradian/Steradian-Bold.woff2") format("woff2"),
+    url("/fonts/Steradian/Steradian-Bold.woff") format("woff");
+}
+
+.Steradian-light {
+    font-weight: 300;
+}
+.Steradian-regular {
+    font-weight: 400;
+}
+.Steradian-medium {
+    font-weight: 600;
+}
+.Steradian-bold {
+    font-weight: 900;
+}
+
+.big-circle::after {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    top:52%;
+    right:0;
+    bottom:0;
+    left:50%;
+    transform: translate(-45% , -38% );
+    width:35.75rem;
+    height: 35.75rem;
+    border-radius: 100%;
+}
+
+@media (min-width:768px){
+    .big-circle::after {
+        width:35.75rem;
+        height: 35.75rem;
+    }
+}
+@media (min-width:1025px){
+    .big-circle::after {
+        width:58.75rem;
+        height: 58.75rem;
+    }
+}
+
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+.carousel-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet {
+    color: #333;  /*Set to match the Tailwind colour you want the active one to be */
+}
+.carousel1-open:checked + .carousel1-item {
+    position: static;
+    opacity: 100;
+}
+.carousel1-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+#carousel-4:checked ~ .control-1,
+#carousel-5:checked ~ .control-2{
+    display: block;
+}
+.carousel-indicators1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet{
+    color: #333;  /*Set to match the Tailwind colour you want the active one to be */
+}
+
+ /* ------------- review card carousel styles -------------------- */
+@media (max-width: 767px) {
+
+    .carousel-open:checked + .carousel-item {
+        position: static;
+        opacity: 100;
+    }
+    .carousel-item {
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+    }
+    #carousel-6:checked ~ .control-6,
+    #carousel-7:checked ~ .control-7,
+    #carousel-8:checked ~ .control-8 {
+        display: block;
+    }
+    .carousel-indicators {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+    }
+    #carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+    #carousel-7:checked ~ .control-7 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+    #carousel-8:checked ~ .control-8 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+        color: #212529;  /*Set to match the Tailwind colour you want the active one to be */
+    }
+    .review-carousel-indicators {
+        top:88%;
+    }
+
+}
+/* ------------- review card carousel styles -------------------- */
